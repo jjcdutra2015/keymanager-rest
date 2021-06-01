@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: keymanagerRest
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/db
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ''
+kafka.bootstrap.servers: localhost:9092
+tracing:
+  jaeger:
+    enabled: true
+    sampler:
+      probability: 0.1

@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: br.com.zup
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, gradle, http-client, jdbc-hikari, jib, junit, kafka, kotlin, kotlin-application, kubernetes, logback, management, micrometer, micrometer-prometheus, mysql, netty-server, openapi, readme, shade, testcontainers, tracing-jaeger, yaml]
