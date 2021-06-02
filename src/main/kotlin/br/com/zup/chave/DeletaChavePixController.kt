@@ -8,7 +8,7 @@ import io.micronaut.http.annotation.Delete
 import java.util.*
 
 @Controller("/api/v1/clientes/{clienteId}/pix/{pixId}")
-class DeletaChavePixRequest(
+class DeletaChavePixController(
     val grpcClient: KeyManagerDeletaGrpcServiceGrpc.KeyManagerDeletaGrpcServiceBlockingStub
 ) {
 
