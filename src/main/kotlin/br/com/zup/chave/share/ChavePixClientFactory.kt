@@ -1,5 +1,6 @@
 package br.com.zup.chave.share
 
+import br.com.zup.edu.KeyManagerDeletaGrpcServiceGrpc
 import br.com.zup.edu.KeyManagerGrpcServiceGrpc
 import io.grpc.ManagedChannel
 import io.micronaut.context.annotation.Factory
@@ -11,4 +12,7 @@ class ChavePixClientFactory(@GrpcChannel("keyManager") val channel: ManagedChann
 
     @Singleton
     fun createPixStub() = KeyManagerGrpcServiceGrpc.newBlockingStub(channel)
+
+    @Singleton
+    fun deletePixStub() = KeyManagerDeletaGrpcServiceGrpc.newBlockingStub(channel)
 }
